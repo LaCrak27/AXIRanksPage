@@ -24,6 +24,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            transform: translateY(10%);
         }
 
         .RankDiv {
@@ -54,6 +55,15 @@
 
         .innercol {
             padding: 1%;
+            min-height: 550px;
+            background-color: rgba(0, 0, 0, .65);
+            text-align: center;
+            border-radius: 5px;
+            outline: 2px solid #FF7100;
+        }
+        .innercolC {
+            padding: 1%;
+            min-height: 550px;
             background-color: rgba(0, 0, 0, .65);
             text-align: center;
             border-radius: 5px;
@@ -117,8 +127,10 @@
             font-family: 'Century Gothic', sans-serif;
             color: white;
             margin: 3px;
-            font-size: 20px;
+            margin-top: 30px;
+            font-size: 25px;
             text-align: center;
+            position: relative;
         }
 
         .OrangeItalicP {
@@ -167,8 +179,73 @@
             vertical-align: middle;
         }
 
+        .square {
+            position: absolute;
+        }
+
+        .NonDiv {
+            text-align: center;
+        }
+
+        .circle-wrapper {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: #282B30;
+            position: relative;
+            display: inline-block;
+            transform: translateY(50px);
+            border: 3px solid #FF7100;
+        }
+
+        .circle {
+            display: block;
+            position: absolute;
+            top: 51%;
+            left: 51%;
+            width: 100px;
+            height: 100px;
+            margin: -51px;
+            background: red;
+            border-radius: 51%;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .deg-0 {
+            transform: translate(200px)
+        }
+
+        .deg-45 {
+            transform: rotate(46deg) translate(200px) rotate(-46deg);
+        }
+
+        .deg-90 {
+            transform: rotate(91deg) translate(200px) rotate(-91deg);
+        }
+
+        .deg-135 {
+            transform: rotate(136deg) translate(200px) rotate(-136deg);
+        }
+
+        .deg-180 {
+            transform: rotate(181deg) translate(200px) rotate(-181deg);
+        }
+
+        .deg-225 {
+            transform: rotate(226deg) translate(200px) rotate(-226deg);
+        }
+
+        .deg-270 {
+            transform: rotate(271deg) translate(200px) rotate(-271deg);
+        }
+
+        .deg-315 {
+            transform: rotate(316deg) translate(200px) rotate(-316deg);
+        }
+
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-        @media screen and (max-width:1000px) {
+        @media screen and (max-width:1200px) {
             .columnP {
                 width: 50%;
             }
@@ -179,10 +256,16 @@
 
             .columnS {
                 width: 50%;
+            }
+            .innercol{
+                min-height: 0px;
+            }
+            .ranklist{
+                transform: translateY(0px);
             }
         }
 
-        @media screen and (max-width:700px) {
+        @media screen and (max-width:1000px) {
             .columnP {
                 width: 100%;
             }
@@ -193,6 +276,12 @@
 
             .columnS {
                 width: 100%;
+            }
+            .innercol{
+                min-height: 0px;
+            }
+            .ranklist{
+                transform: translateY(0px);
             }
         }
     </style>
@@ -286,8 +375,36 @@
         </div>
 
         <div class="columnC">
-            <div class="innercol">
+            <div class="innercolC">
                 <p class="OrangeItalicT"><i>"Challenge" ranks</i></p>
+                <div class="NonDiv">
+                    <div class="circle-wrapper">
+                        <div class="circle deg-0">
+                            Lor
+                        </div>
+                        <div class="circle deg-45">
+                            Lore
+                        </div>
+                        <div class="circle deg-90">
+                            Lore
+                        </div>
+                        <div class="circle deg-135">
+                            Lorem
+                        </div>
+                        <div class="circle deg-180">
+                            Lorem
+                        </div>
+                        <div class="circle deg-225">
+                            Lorem
+                        </div>
+                        <div class="circle deg-270">
+                            Lorem
+                        </div>
+                        <div class="circle deg-315">
+                            Lorem
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -326,8 +443,7 @@
                         </div>
                     </div>
                 </ul>
-                <p class="WhiteBold1"><b>...plus many other rank celebrating combat and non combat related
-                        achievements!</b></p>
+                <p class="WhiteBold1"><b>...plus many other ranks celebrating combat and non combat related achievements!</b></p>
             </div>
         </div>
     </div>
