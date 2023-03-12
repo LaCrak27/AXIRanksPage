@@ -27,6 +27,14 @@
             transform: translateY(10%);
         }
 
+        .Cranklist {
+            display: none;
+            visibility: hidden;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
         .RankDiv {
             display: grid;
             align-items: center;
@@ -142,6 +150,7 @@
             text-align: center;
             position: relative;
         }
+
         .WhiteBold3 {
             font-family: 'Century Gothic', sans-serif;
             color: white;
@@ -204,14 +213,17 @@
         .NonDiv {
             text-align: center;
         }
-        .DP{
-            position: relative;
-            transform: translateY(120px);
-            display: inline-block;
+
+        .DP {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
+
         .circle-wrapper {
-            width: 430px;
-            height: 430px;
+            width: 400px;
+            height: 400px;
             border-radius: 50%;
             background: #282B30;
             position: relative;
@@ -223,45 +235,72 @@
         .circle {
             display: block;
             position: absolute;
-            top: 51%;
-            left: 51%;
-            margin: -51px;
+            top: 50%;
+            left: 50%;
+            margin: -50px;
         }
 
         .deg-0 {
-                transform: translate(200px)
-            }
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            transform: translate(200px)
+        }
 
-            .deg-45 {
-                transform: rotate(40deg) translate(200px) rotate(-40deg);
-            }
+        .deg-45 {
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            transform: rotate(40deg) translate(200px) rotate(-40deg);
+        }
 
-            .deg-90 {
-                transform: rotate(80deg) translate(200px) rotate(-80deg);
-            }
+        .deg-90 {
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            transform: rotate(80deg) translate(200px) rotate(-80deg);
+        }
 
-            .deg-135 {
-                transform: rotate(120deg) translate(200px) rotate(-120deg);
-            }
+        .deg-135 {
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            transform: rotate(120deg) translate(200px) rotate(-120deg);
+        }
 
-            .deg-180 {
-                transform: rotate(160deg) translate(200px) rotate(-160deg);
-            }
+        .deg-180 {
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            transform: rotate(160deg) translate(200px) rotate(-160deg);
+        }
 
-            .deg-225 {
-                transform: rotate(200deg) translate(200px) rotate(-200deg);
-            }
+        .deg-225 {
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            transform: rotate(200deg) translate(200px) rotate(-200deg);
+        }
 
-            .deg-270 {
-                transform: rotate(240deg) translate(200px) rotate(-240deg);
-            }
+        .deg-270 {
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            transform: rotate(240deg) translate(200px) rotate(-240deg);
+        }
 
-            .deg-315 {
-                transform: rotate(280deg) translate(200px) rotate(-280deg);
-            }
-            .dege {
-                transform: rotate(320deg) translate(200px) rotate(-320deg);
-            }
+        .deg-315 {
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            transform: rotate(280deg) translate(200px) rotate(-280deg);
+        }
+
+        .dege {
+            width: 115px;
+            height: 115px;
+            transform: rotate(320deg) translate(200px) rotate(-320deg);
+        }
 
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media screen and (max-width:1200px) {
@@ -280,48 +319,28 @@
             .innercol {
                 min-height: 0px;
             }
+            .innercolC {
+                min-height: 0px;
+            }
 
             .ranklist {
                 transform: translateY(0px);
             }
 
-            .deg-0 {
-                transform: translate(150px)
+           
+
+            .circle-wrapper {
+                display: none;
+                visibility: hidden;
             }
 
-            .deg-45 {
-                transform: rotate(40deg) translate(150px) rotate(-40deg);
-            }
-
-            .deg-90 {
-                transform: rotate(80deg) translate(150px) rotate(-80deg);
-            }
-
-            .deg-135 {
-                transform: rotate(120deg) translate(150px) rotate(-120deg);
-            }
-
-            .deg-180 {
-                transform: rotate(160deg) translate(150px) rotate(-160deg);
-            }
-
-            .deg-225 {
-                transform: rotate(200deg) translate(150px) rotate(-200deg);
-            }
-
-            .deg-270 {
-                transform: rotate(240deg) translate(150px) rotate(-240deg);
-            }
-
-            .deg-315 {
-                transform: rotate(280deg) translate(150px) rotate(-280deg);
-            }
-            .dege {
-                transform: rotate(320deg) translate(150px) rotate(-320deg);
+            .Cranklist {
+                display: block;
+                visibility: visible;
             }
         }
 
-        @media screen and (max-width:850px) {
+        @media screen and (max-width:600px) {
             .columnP {
                 width: 100%;
             }
@@ -340,41 +359,6 @@
 
             .ranklist {
                 transform: translateY(0px);
-            }
-
-            .deg-0 {
-                transform: translate(150px)
-            }
-
-            .deg-45 {
-                transform: rotate(40deg) translate(150px) rotate(-40deg);
-            }
-
-            .deg-90 {
-                transform: rotate(80deg) translate(150px) rotate(-80deg);
-            }
-
-            .deg-135 {
-                transform: rotate(120deg) translate(150px) rotate(-120deg);
-            }
-
-            .deg-180 {
-                transform: rotate(160deg) translate(150px) rotate(-160deg);
-            }
-
-            .deg-225 {
-                transform: rotate(200deg) translate(150px) rotate(-200deg);
-            }
-
-            .deg-270 {
-                transform: rotate(240deg) translate(150px) rotate(-240deg);
-            }
-
-            .deg-315 {
-                transform: rotate(280deg) translate(150px) rotate(-280deg);
-            }
-            .dege {
-                transform: rotate(320deg) translate(150px) rotate(-320deg);
             }
         }
     </style>
@@ -473,8 +457,7 @@
                 <div class="NonDiv">
                     <div class="circle-wrapper">
                         <div class="DP">
-                            <img src="https://axicloud.blob.core.windows.net/public/images/club10.png"
-                                height="170">
+                            <img src="https://axicloud.blob.core.windows.net/public/images/club10.png" height="170">
                             <p class="WhiteBold3"><b>"Decent Pilot"</b></p>
                         </div>
                         <div class="circle deg-0">
@@ -522,9 +505,132 @@
                                 height="90">
                             <p class="WhiteBold2"><b>Small ships wing</b></p>
                         </div>
-                    </div>
-                    
+                    </div>  
                 </div>
+                <ul class="Cranklist">
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://media.discordapp.net/attachments/1082777309985132596/1083877974383804566/C_Hephaestus_Shunned.png?width=483&height=559" height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>Hephaestus Shunned</b></p>
+                                <p class="OrangeItalicP"><i>No engineering</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://media.discordapp.net/attachments/1082777309985132596/1083877974924869642/C_Snake_Eater.png?width=482&height=559"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>Snake Eater</b></p>
+                                <p class="OrangeItalicP"><i>No guardian modules</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://cdn.discordapp.com/attachments/1082777309985132596/1083877973628829746/C_100_Club.png"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>100% Club</b></p>
+                                <p class="OrangeItalicP"><i>No damage taken</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://cdn.discordapp.com/attachments/1082777309985132596/1083877973901447288/C_Astraeas_Clarity.png"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>Astraea's Clarity</b></p>
+                                <p class="OrangeItalicP"><i>Ammo efficiency</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://cdn.discordapp.com/attachments/1082777309985132596/1083877974161489941/C_Cerberus_Bane.png"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>Cerberus' Bane</b></p>
+                                <p class="OrangeItalicP"><i>Multi-goid</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://cdn.discordapp.com/attachments/1082777309985132596/1083877974635450379/C_Myrmidon.png"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>Myrmidon</b></p>
+                                <p class="OrangeItalicP"><i>Speedrun</i></p>
+                            </div>
+                        </div>
+                    </li>   
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://cdn.discordapp.com/attachments/1082777309985132596/1083877973343604888/C_Vanguard.png"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>Vanguard</b></p>
+                                <p class="OrangeItalicP"><i>Off-meta ships</i></p>
+                            </div>
+                        </div>
+                    </li>  
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://cdn.discordapp.com/attachments/1082777309985132596/1083877975415586846/C_The_Swarm.png"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>The Swarm</b></p>
+                                <p class="OrangeItalicP"><i>Small Ships Wing</i></p>
+                            </div>
+                        </div>
+                    </li>  
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://cdn.discordapp.com/attachments/1082777309985132596/1083877975214264320/C_Soaring_Sleipnir.png"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>Soaring Sleipnir</b></p>
+                                <p class="OrangeItalicP"><i>No HUD</i></p>
+                            </div>
+                        </div>
+                    </li>  
+                    <li>
+                        <p class="WhiteBold1" style="margin-top: 4px;"><b>...and finally, for the best of the best...</b></p>
+                    </li>
+                    <li>
+                        <div class="RankDiv">
+                            <div class="Pimage">
+                                <img src="https://axicloud.blob.core.windows.net/public/images/club10.png"
+                                    height="80">
+                            </div>
+                            <div class="Ptext">
+                                <p class="WhiteBold"><b>Decent Pilot</b></p>
+                                <p class="OrangeItalicP"><i>Achieve all challenge ranks</i></p>
+                            </div>
+                        </div>
+                    </li>  
+                </ul>
             </div>
         </div>
 
